@@ -24,10 +24,10 @@ You can find structure of the project in the following:
 ```
 
 # TO-DO
-[x] listen for new block minted on network
-[] index a block which minted perviously or just mint in the network
-[] extract transactions from block and trigger event for it
-[] digest transactions and trigger token and address services
-[] aggregate addresses and show all input, output or calling function
-[] aggregate all token transaction to show calling and transaction history
-[] connect webApp to read from address and token service
+- [x] listen for new block minted on network
+- [] index a block which minted perviously or just mint in the network
+- [] extract transactions from block and trigger event for it
+- [] digest transactions and trigger token and address services
+- [] aggregate addresses and show all input, output or calling function
+- [] aggregate all token transaction to show calling and transaction history
+- [] connect webApp to read from address and token service
