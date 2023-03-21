@@ -1,0 +1,36 @@
+{
+  "name": "tokenIndexer",
+  "version": "1.0.0",
+  "description": "Indexer of network token",
+  "main": "index.js",
+  "scripts": {
+    "start": " typescript-module-alias-build ./src --out-dir dist && node dist/index.js",
+    "start:dev": "nodemon --exec typescript-module-alias ./src/index.ts",
+    "build": "typescript-module-alias-build ./src --out-dir dist"
+  },
+  "author": "Majid Lashgarian <Madjid.80@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.15.3",
+    "lib-indexer": "file:../lib-indexer",
+    "mongoose": "^7.0.2",
+    "typescript": "^5.0.2",
+    "@types/connect-timeout": "0.0.36",
+    "@types/express": "^4.17.17",
+    "@types/extract-domain": "^2.3.1",
+    "bunyan": "^1.8.15",
+    "connect-timeout": "^1.9.0",
+    "express": "^4.18.2",
+    "extract-domain": "^2.4.8",
+    "module-alias": "^2.2.2",
+    "prom-client": "^14.2.0"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.8",
+    "@types/jest": "^29.4.0",
+    "@types/sinon": "^10.0.13",
+    "nodemon": "^2.0.21",
+    "sinon": "^15.0.1",
+    "typescript-module-alias": "^2.2.9"
+  }
+}

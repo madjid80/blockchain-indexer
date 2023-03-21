@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@interfaces/*": ["interfaces/*"],
+      "@constant/*": ["constants/*"]
+    }
+  },
+  "include": ["interfaces/**/*.ts", "constants/**/*.ts"],
+  "exclude": ["node_modules"]
+}

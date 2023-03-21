@@ -1,0 +1,14 @@
+import { Router } from 'express';
+import { healthCheckControllerHandler } from './healthCheck';
+import { serverInfoControllerHandler } from './info';
+import { metricControllerHandler } from './metric';
+import { NotFoundControllerHandler } from './notFound';
+const router = Router();
+
+
+router.get('/', serverInfoControllerHandler);
+router.get('/metric', metricControllerHandler);
+router.get('/health', healthCheckControllerHandler);
+router.use(NotFoundControllerHandler);
+
+export default { router };
